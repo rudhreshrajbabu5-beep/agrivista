@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:wght@500;600&display=swap');
+
+:root {
+    --deep-green: #1B4332;
+    --forest-green: #2D6A4F;
+    --sage-green: #74A57F;
+    --soft-green: #B7E4C7;
+    --amber: #D98E04;
+    --clay: #BC6C25;
+    --slate: #4A5859;
+    --off-white: #FAF6EE;
+    --card-white: #FFFFFF;
+    --muted-grid: #E7E2D6;
+}
+
+html, body, [class*="css"]  {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+.stApp {
+    background: linear-gradient(180deg, #FAF6EE 0%, #F5F0E4 100%);
+}
+
+section[data-testid="stSidebar"] {
+    background: linear-gradient(180deg, #1B4332 0%, #163A2A 100%);
+}
+section[data-testid="stSidebar"] * {
+    color: #F1F8F1 !important;
+}
+section[data-testid="stSidebar"] .stRadio label {
+    font-weight: 500;
+}
+section[data-testid="stSidebar"] hr {
+    border-color: rgba(255,255,255,0.15);
+}
+
+/* ---------- Hero ---------- */
+.hero-wrap {
+    background: linear-gradient(120deg, #1B4332 0%, #2D6A4F 55%, #40916C 100%);
+    border-radius: 22px;
+    padding: 36px 40px;
+    color: #F5F0E4;
+    box-shadow: 0 10px 30px rgba(27,67,50,0.25);
+    margin-bottom: 22px;
+    position: relative;
+    overflow: hidden;
+}
+.hero-title {
+    font-family: 'Fraunces', serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    letter-spacing: -0.5px;
+}
+.hero-subtitle {
+    font-size: 1.05rem;
+    opacity: 0.92;
+    margin-bottom: 14px;
+    font-weight: 400;
+}
+.hero-desc {
+    font-size: 0.95rem;
+    max-width: 780px;
+    opacity: 0.88;
+    line-height: 1.55;
+}
+.hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 999px;
+    padding: 4px 14px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-right: 8px;
+    margin-top: 10px;
+}
+
+/* ---------- KPI Cards ---------- */
+.kpi-card {
+    background: var(--card-white);
+    border-radius: 16px;
+    padding: 20px 22px;
+    border: 1px solid var(--muted-grid);
+    box-shadow: 0 4px 14px rgba(27,67,50,0.06);
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(27,67,50,0.12);
+}
+.kpi-icon { font-size: 1.5rem; margin-bottom: 6px; }
+.kpi-label {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--slate);
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.kpi-value {
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: var(--deep-green);
+    line-height: 1.15;
+}
+.kpi-sub {
+    font-size: 0.78rem;
+    color: var(--sage-green);
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+/* ---------- Section cards ---------- */
+.section-card {
+    background: var(--card-white);
+    border-radius: 18px;
+    padding: 22px 24px;
+    border: 1px solid var(--muted-grid);
+    box-shadow: 0 4px 14px rgba(27,67,50,0.05);
+    margin-bottom: 18px;
+}
+.section-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--deep-green);
+    margin-bottom: 2px;
+}
+.section-eyebrow {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--sage-green);
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* ---------- Insight cards ---------- */
+.insight-card {
+    background: linear-gradient(120deg, #FFFFFF 0%, #F6FBF7 100%);
+    border-left: 4px solid var(--forest-green);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+    font-size: 0.92rem;
+    color: #33403B;
+    box-shadow: 0 2px 8px rgba(27,67,50,0.05);
+}
+
+/* ---------- Pills / tags ---------- */
+.tag-pill {
+    display: inline-block;
+    background: var(--soft-green);
+    color: var(--deep-green);
+    border-radius: 999px;
+    padding: 3px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+/* ---------- Prediction result ---------- */
+.predict-result {
+    background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 100%);
+    border-radius: 20px;
+    padding: 34px;
+    text-align: center;
+    color: #F5F0E4;
+    box-shadow: 0 12px 28px rgba(27,67,50,0.28);
+}
+.predict-value {
+    font-family: 'Fraunces', serif;
+    font-size: 3.1rem;
+    font-weight: 600;
+    margin: 6px 0;
+}
+.predict-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+/* ---------- Metric chips row (under prediction) ---------- */
+.metric-chip {
+    background: var(--card-white);
+    border: 1px solid var(--muted-grid);
+    border-radius: 14px;
+    padding: 12px 10px;
+    text-align: center;
+}
+.metric-chip .val { font-size: 1.15rem; font-weight: 800; color: var(--deep-green); }
+.metric-chip .lab { font-size: 0.72rem; color: var(--slate); text-transform: uppercase; letter-spacing: 0.5px; }
+
+/* Headings */
+h1, h2, h3 { color: var(--deep-green); font-family: 'Inter', sans-serif; }
+
+/* Divider */
+.soft-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--muted-grid), transparent);
+    margin: 22px 0;
+    border: none;
+}
+
+/* Tabs */
+button[data-baseweb="tab"] {
+    font-weight: 600;
+}
+
+/* Dataframe */
+[data-testid="stDataFrame"] {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* ---------- Methodology / callout boxes ---------- */
+.callout-box {
+    background: #FFF8E8;
+    border-left: 4px solid var(--amber);
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin: 10px 0 18px 0;
+    font-size: 0.9rem;
+    color: #4A3B12;
+}
+.callout-box.warn {
+    background: #FDEEE8;
+    border-left-color: var(--clay);
+    color: #5A2E13;
+}
+.callout-box.info {
+    background: #EEF5F0;
+    border-left-color: var(--forest-green);
+    color: #1B4332;
+}
+
+/* ---------- Nav header ---------- */
+.nav-brand {
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #F5F0E4;
+    margin-bottom: 0;
+}
+.nav-brand-sub {
+    font-size: 0.72rem;
+    color: #B7E4C7;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+}
