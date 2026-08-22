@@ -13,7 +13,7 @@ import sys
 import pandas as pd
 import streamlit as st
 
-sys.path.append(os.path.dirname(os.path.absent(__file__)))
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from src import data_loader, preprocessing, analysis, statistics as stats_mod
 from src import insights as insights_mod, visualizations as viz, ml_model
